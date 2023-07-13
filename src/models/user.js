@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-var userSchema = new Schema({
+const userSchema = new Schema({
     firstname:{
         type:String,
         required:true,
@@ -25,5 +25,6 @@ var userSchema = new Schema({
     },
 });
 
-//Export the model
-export default model('User', userSchema);
+const User = model('User', userSchema);
+
+export default User;

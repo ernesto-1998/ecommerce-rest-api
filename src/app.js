@@ -1,6 +1,6 @@
 import express from "express";
 import dbConnect from "./config/db.js";
-import authRouter from "./routes/auth-route.js";
+import authRouter from "./routes/auth.js";
 
 dbConnect();
 
